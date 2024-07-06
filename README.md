@@ -15,5 +15,19 @@ you need install all pip need
 
 more information
 -
-in code line 16 ` allow_origins=["http://127.0.0.1:5500", "localhost"]` you need ajust your frontend host and port for make sure both browser and postman can run corectly<br>
+in code line 16 ` allow_origins=["http://127.0.0.1:5500", "localhost"]` you need ajust your frontend host and port for make sure both browser and postman can run corectly.<br>
 if the backend can olny running well in postman but not in browser, please ajust frontend host and port because it importan to connect between diffrent port 
+
+run
+--
+1. normaly run use-> `uvicorn main:app --host 0.0.0.0 --port 8080` (the format is `uvicorn [YOUR_MAIN_FOLDER]:app --host 0.0.0.0 --port 8080` )
+2. or you may use fastapi basic development server runner -> `fastapi dev main` (the format is `fastapi dev [YOUR_MAIN_FILE]`)
+3. and you can also use fastapi basic product server runner -> `fastapi run`
+ 
+API hit
+-
+1. use postman for hit the endpoint
+2. use fastapi featur for hit the endpoint
+
+that is your call for hit'em
+
