@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/asset/css/ready.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body style="background-color: #BA5858;">
+    <header style="display: flex;flex-direction: column;">
+        <div class="title" style="color: #ffffffff;text-align: center;font-size: 50px;"><i id="teks">ニュートリスキャン</i></div>
+        <h3 style="text-align: center;color: #ffffffff;">
+            Nutri Scan
+        </h3>
+    </header>
+    <main style="display: flex; align-items: center;justify-content: center;flex-direction: column;">
+        <div class="mb-3">
+
+            <input type="file" class="form-control" name="baba" id="file-input" aria-describedby="helpId"
+                accept="image/*" style="margin-top: 160px;background-color: #328a8a; color: #ffffffff;" />
+            <small id="helpId" class="form-text text-light">! not all products are listed !</small>
+        </div>
+        <button onclick="uploadImage()" class="btn"
+            style="background-color:#BA2299; border-color: black; color: #ffffffff;">Scan Barcode</button>
+    </main>
+    <br>
+    <footer style="display: flex;flex-direction: column;">
+        <!-- place footer here -->
+        <table class="table table-bordered">
+            <thead>
+                <tr style="background-color: rgb(48, 53, 142);height: 96px;color: #ffffffff;text-align: center;">
+                    <th scope="col">Type</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Brands</th>
+                    <th scope="col">Categories</th>
+                    <th scope="col">Nutriscore Grade</th>
+                    <th scope="col">Eco Grade</th>
+                    <th scope="col">Image</th>
+                </tr>
+            </thead>
+            <tbody style="background-color: wheat;">
+                <tr>
+                    <td id="Types"></td>
+                    <td id="Datas"></td>
+                    <td id="Names"></td>
+                    <td id="Brands"></td>
+                    <td id="Categories"></td>
+                    <td id="Nutries" style="text-transform: uppercase;text-align: center;"></td>
+                    <td id="Eco" style="text-transform: uppercase;text-align: center;"></td>
+                    <td id="Images"><img id="product-image" alt="Product Image" style="max-width: 100%;"></td>
+                </tr>
+            </tbody>
+          </table> 
+        <div id="result"></div>
+        <b style="text-align: center;">! check nutrimets componen below !</b>
+        <h4 id="Formula" style="text-align: center;"></h4>
+
+
+        <script src="/asset/js/ready.js"></script>
+
+
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
