@@ -1,20 +1,19 @@
-# Nutri-scan
+# backend installation
+The backend need import all modul need, follow the steps below for run the backend
 
-Here Nutri Scan aplication the aplication use to read barcode from food product and the output will show data from the food like Bardoce ID and type, Food brand or name, food Image, and any information
-in this repo include backend and frontend, with diffrent repo branch.<br>
-
-frontend
+install virtual environtment for python
 -
-1. Native WEB programing (HTML, CSS, JS)
-2. Frame work boostrap5
+Before install the pip create folder virtual for environtment `python -m venv venv`<br>
 
-backend
+instal pip needed
 -
-1. FastApi
-2. Public existing REST API(open food fact)
-3. pyzbar
-4. Pillow
-5. cv2
-6. uvicorn
-7. numpy
-8. request
+you need install all pip need
+1. `pip install fastapi uvicorn pyzbar Pillow `
+2. `pip install request`
+3. `pip install opencv-python`
+<br>
+
+more information
+-
+in code line 16 ` allow_origins=["http://127.0.0.1:5500", "localhost"]` you need ajust your frontend host and port for make sure both browser and postman can run corectly<br>
+if the backend can olny running well in postman but not in browser, please ajust frontend host and port because it importan to connect between diffrent port 
